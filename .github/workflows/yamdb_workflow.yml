@@ -25,7 +25,9 @@ jobs:
         python -m flake8
         # перейти в папку, содержащую manage.py — 
         #<корневая_папка_infra_actions>/<папка_проекта>/manage.p
-
+    - name: Test with pytest
+      run: |
+        pytest
 
   # Деплой приложения на удалённый сервер
   deploy:
