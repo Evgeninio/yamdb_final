@@ -38,6 +38,7 @@ jobs:
             key: ${{ secrets.SSH_KEY }}
             passphrase: ${{ secrets.PASSPHRASE }}
             script: |
+              sudo docker pull evgeninio/yamdb_final:latest
               sudo docker-compose stop
               sudo docker-compose rm web
               touch .env
@@ -48,7 +49,7 @@ jobs:
               echo DB_HOST=${{ secrets.DB_HOST }} >> .env
               echo DB_PORT=${{ secrets.DB_PORT }} >> .env
               sudo docker-compose up -d 
-  
+              
 
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
