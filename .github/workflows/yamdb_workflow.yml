@@ -23,6 +23,7 @@ jobs:
       run: |
         # запуск проверки проекта по flake8
         python -m flake8
+        pytest
 
   # Деплой приложения на удалённый сервер
   deploy:
