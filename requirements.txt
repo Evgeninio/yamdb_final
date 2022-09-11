@@ -7,4 +7,5 @@ pytest-django==4.4.0
 pytest-pythonpath==0.7.3
 python-dotenv
 djangorestframework-simplejwt
-django-filter
+django-filter==21.1
+psycopg2-binary==2.8.6
