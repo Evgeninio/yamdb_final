@@ -3,7 +3,6 @@ from csv import DictReader
 from uuid import uuid4
 
 from django.core.management import BaseCommand
-
 from users.models import CustomUser
 
 ALREDY_LOADED_ERROR_MESSAGE = (
