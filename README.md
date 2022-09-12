@@ -85,5 +85,9 @@ python manage.py load_title_data
 
 Afanasev Evgenii - [Evgeninio](https://github.com/Evgeninio)
 
+[Api/v1](http://51.250.101.162/api/v1/)
 
+[Admin](http://51.250.101.162/admin)
+
+[Redoc](http://51.250.101.162/redoc)
 
